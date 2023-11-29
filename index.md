@@ -25,10 +25,10 @@ FAILURES!!!
 Tests run: 2,  Failures: 1
 ```
 Staff:
-Of course! Start by looking into what was output when you ran the test.sh file, what is wrong with the filter function? The order of appending elements to the list matters a lot in this case!
+I would suggest you start by looking into what was output when you ran the test.sh file, what is wrong with the filter function? The order of appending elements to the list matters a lot in this case!
 
 Student (fixed):
-Thank you! I've figured it out! In the original code, the if statement appends the desired string to the very front of the list, which is at inde 0, but rather we want to append to the very end of the list, so the index should be the list.size().
+Thank you! I've figured it out! In the original code, the if statement appends the desired string to the very front of the list, which is at index 0, but rather we want to append to the very end of the list, so the index should be the list.size().
 
 ```
 student@8e71b02402ac:~/buggy$ bash test.sh
@@ -51,5 +51,5 @@ OK (2 tests)
 ```
 
 Part 2 – Reflection
-I have never used Linux before in my life, so it was very challenging and interesting to learn it from scratch. I think something I found very unique was how we learned how to start a server that pops up a website when it starts. I think something really cool that we did in the lab was when we worked in pairs trying to imitate and build our own grading system and we ran the different repositories to check its functionality. Also, the process of debugging with vim was a very new experience for me because the unqiue command keys for vim and it was very surprising for me that the cursor is not a thing in im. 
+I have never used Linux before in my life, so it was very challenging and interesting to learn it from scratch. I think something I found very unique was how we learned how to start a server that pops up a website when it starts. I think something really cool that we did in the lab was when we worked in pairs trying to imitate and build our own grading system and we ran the different repositories to check its functionality. Also, the process of debugging with Vim was a very new experience for me because of the unique command keys for Vim, and it was very surprising for me that the cursor doesn't work in Vim. 
 
