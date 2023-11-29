@@ -1,6 +1,8 @@
 Lab 5
 
+
 Part 1
+
 
 Anonymous:
 Hi, is it possible that I can get a hint on what was wrong with the ListExamples. java file in the Skill Demo 9 practice? I remember in week 7 the lab asked us to change index1 to index2 and that fixed the problem for the merge function, but I couldn't figure out what was wrong with the filter function.
