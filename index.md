@@ -1,4 +1,7 @@
 Lab 5
+
+Part 1
+
 Anonymous:
 Hi, is it possible that I can get a hint on what was wrong with the ListExamples. java file in the Skill Demo 9 practice? I remember in week 7 the lab asked us to change index1 to index2 and that fixed the problem for the merge function, but I couldn't figure out what was wrong with the filter function.
 
@@ -45,5 +48,6 @@ OK (2 tests)
   }
 ```
 
-
+Part 2 – Reflection
+I have never used Linux before in my life, so it was very challenging and interesting to learn it from scratch. I think something I found very unique was how we learned how to start a server that pops up a website when it starts. I think something really cool that we did in the lab was when we worked in pairs trying to imitate and build our own grading system and we ran the different repositories to check its functionality. Also, the process of debugging with vim was a very new experience for me because the unqiue command keys for vim and it was very surprising for me that the cursor is not a thing in im. 
 
