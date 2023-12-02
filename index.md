@@ -51,7 +51,7 @@ OK (2 tests)
 ```
 Step4:
 
-The directory is lab7, and we are running the test.sh and ListExamples.java files in the buggy directory. The test.sh was just the commands that triggered the bug and produced the output, it contains no bug. However, we were trying to fix the ListExamples.java file. In the ListExamples.java file, which contains two functions, filter and merge; in this scenario, the student has already fixed the bug in the merge function but is stuck on debugging for the filter function. The error message output by running test.sh said the order of the list was wrong, but the student didn't know how to fix that. The command line I ran was
+The directory is lab7, and we are running the test.sh and ListExamples.java files in the lab7 directory. The test.sh was just the commands that triggered the bug and produced the output, it contains no bug. However, we were trying to fix the ListExamples.java file. In the ListExamples.java file, which contains two functions, filter and merge; in this scenario, the student has already fixed the bug in the merge function but is stuck on debugging for the filter function. The error message output by running test.sh said the order of the list was wrong, but the student didn't know how to fix that. The command line I ran was
 ```
 student@8e71b02402ac:~/buggy$ bash test.sh
 ```
