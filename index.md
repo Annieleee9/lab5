@@ -49,11 +49,22 @@ OK (2 tests)
     return result;
   }
 ```
-The directory is buggy, and we are running the test.sh and ListExamples.java file in the buggy directory. The test.sh was just the commands that triggered the bug and produced the output, it contains no bug. However, we were trying to fix the ListExamples.java file. In the ListExamples.java file, which contains two functions, filter and merge; in this scenario, the student has already fixed the bug in the merge function but is stuck on debugging for the filter function. The error message output by running test.sh that said the order of the list was wrong, but the student didn't know how to fix that. The command line I ran was
+Step4:
+
+The directory is lab7, and we are running the test.sh and ListExamples.java files in the buggy directory. The test.sh was just the commands that triggered the bug and produced the output, it contains no bug. However, we were trying to fix the ListExamples.java file. In the ListExamples.java file, which contains two functions, filter and merge; in this scenario, the student has already fixed the bug in the merge function but is stuck on debugging for the filter function. The error message output by running test.sh said the order of the list was wrong, but the student didn't know how to fix that. The command line I ran was
 ```
 student@8e71b02402ac:~/buggy$ bash test.sh
 ```
-It triggered the bug, and produced the output telling us that the JUnit failed. 
+The command line above triggered the bug and produced the output demonstrating that the JUnit test failed. The staff gave the student a hint: to look at the index order, which is the order of appending the elements to the list. The problem was 
+```
+result.add(0, s);
+```
+which would append the desired string to the beginning of the list, but we want to append it at the end of the list, therefore we should switch it to 
+```
+result.add(result.size)(), s);
+```
+By making such changes, the if statement will append the desired string to the end of the list, which is the correct order we expected.
+
 Part 2 – Reflection
-I have never used Linux before, so it was very challenging and interesting to learn it from scratch. I think something I found very unique was how we learned how to start a server that pops up a website when it starts. I think something really cool that we did in the lab was when we worked in pairs trying to imitate and build our grading system and we ran the different repositories to check its functionality. Also, the process of debugging with Vim was a very new experience for me because of the unique command keys for Vim, and it was very surprising for me that the cursor didn't work in Vim. 
+I have never used Linux before, so it was very challenging and interesting to learn it from scratch. I think something I found very unique was how we learned how to start a server that pops up a website when it starts. I think what was cool that we did in the lab was when we worked in pairs trying to imitate and build our grading system and we ran the different repositories to check its functionality. Also, the process of debugging with Vim was a very new experience for me because of the unique command keys for Vim, and it was very surprising for me that the cursor didn't work in Vim. 
 
